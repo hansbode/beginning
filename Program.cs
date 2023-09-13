@@ -8,29 +8,37 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-              
+             int zahl1 = 25;
+             int zahl2 = 45;
 
-                 int myNum = 9;         
+             int ergebnis1 = zahl1 + zahl2;
+             Console.WriteLine(ergebnis1);
+             int ergebnis2 = zahl1 - zahl2;
+             Console.WriteLine(ergebnis2);
 
-                 float myDoubleNum = 8.99f;   
+             int ergebnis3 = zahl1 * zahl2;
+             Console.WriteLine(ergebnis3);
 
-                 char myLetter = 'A';  
+             int ergebnis4 = zahl1 / zahl1;
+             Console.WriteLine(ergebnis4);
 
-                 bool myBoolean = false; 
+             int ergebnis5 = zahl1*zahl1-zahl1*zahl1;
+             Console.WriteLine(ergebnis5);
 
-                 string myText = "Hello World"; 
+             int ergebnis6 = zahl2 % zahl1;
+             Console.WriteLine(ergebnis6);
 
-            
-            
-            int zahl = 9;
 
-            double kommazahl = 8.99;
+            zahl2++;
+            Console.WriteLine(zahl2);
 
-            char buchstabe = 'A'; 
+            zahl1--;
+            Console.WriteLine(zahl1);
 
-            bool wahrheitswert = false;
+             Console.WriteLine(zahl2%zahl1);
+            // C# Operators (w3schools.com)   link para poder hacer tantas operaciones como se me ronque la gana 
+         
 
-            string Text = "Hello World";
         }
     }
 }
