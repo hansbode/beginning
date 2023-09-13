@@ -8,30 +8,20 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-           List<int> myNumberList = new List<int>();
-           int user_Zahl = 0;
-           do
-            
-                //code block
-                
-           {
-                Console.WriteLine("Gebe mir eine Zahl");
-                user_Zahl = Convert.ToInt32(Console.ReadLine());
-                myNumberList.Add(user_Zahl);
+           //List<int> myNumberList = new List<int>();
 
-           } while(user_Zahl > 0);
+           Console.WriteLine("Sage mir bis zu welcher Zahl aufsummiert werden soll");
+           int untilNumber = Convert.ToInt32(Console.ReadLine());
 
-           //Suma de todos los numeros
+            int ergebnis = 0;
+           for(int i = 0; i<=untilNumber; i++){
 
-           int ergebnis = 0;
-           foreach(int Zahl in myNumberList)
-           {
-            ergebnis += Zahl;
+                ergebnis += i;
+                Console.WriteLine($"Added Number  {i}, current result {ergebnis}");
+
            }
 
-           Console.WriteLine($"Das Ergebnis ist {ergebnis}");
-             
-
+           
         }
     }
 }
