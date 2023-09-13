@@ -9,16 +9,17 @@ namespace HelloWorld
         static void Main(string[] args)
         {
            List<int> myNumberList = new List<int>();
-
-           Console.WriteLine("Sage mir wie viele Zahlen du in deine Liste hinzufügen möcht");
-           int amountNumbers = Convert.ToInt32(Console.ReadLine());
-
-           while(myNumberList.Count < amountNumbers)
+           int user_Zahl = 0;
+           do
+            
+                //code block
+                
            {
                 Console.WriteLine("Gebe mir eine Zahl");
-                myNumberList.Add(Convert.ToInt32(Console.ReadLine()));
+                user_Zahl = Convert.ToInt32(Console.ReadLine());
+                myNumberList.Add(user_Zahl);
 
-           }
+           } while(user_Zahl > 0);
 
            //Suma de todos los numeros
 
