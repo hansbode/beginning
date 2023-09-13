@@ -4,15 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gebe mir deinen Namen!");
-            string name = Console.ReadLine();
+            Console.WriteLine("Gebe mir eine Zahl");
+            string ersteZahl = Console.ReadLine();
+            int numero = Convert.ToInt16(ersteZahl);
 
-            Console.WriteLine("Sage mir wie alt bist du");
-            string age = Console.ReadLine();
-            int alter = Convert.ToInt16(age);
-            int alterInZehn = alter+ 10;
             
-            Console.WriteLine($"Hello,   {name} Dein Alter ist  {age}   In Zehn jahren bist du  {alterInZehn}" );
+
+            Console.WriteLine("Gebe mir ein zweiten Zahl");
+            string zweiterZahl = Console.ReadLine();
+            int numero2 = Convert.ToInt16(zweiterZahl);
+
+            int ergebnis = numero + numero2;
+
+            Console.WriteLine($"Du hast  zu erst  {ersteZahl}  zweitens:  + {zweiterZahl} und das Ergebnis ist {ergebnis}");
+
         }
     }
 }
