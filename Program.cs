@@ -4,19 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gebe mir eine Zahl");
-            string ersteZahl = Console.ReadLine();
-            int numero = Convert.ToInt16(ersteZahl);
+           Console.WriteLine("Gebe mir eine Zahl");
+           string ersteZahl = Console.ReadLine();
 
-            
 
-            Console.WriteLine("Gebe mir ein zweiten Zahl");
-            string zweiterZahl = Console.ReadLine();
-            int numero2 = Convert.ToInt16(zweiterZahl);
+           Console.WriteLine("Gebe mir ein andere Zahl");
+           string zweiterZahl = Console.ReadLine();
 
-            int ergebnis = numero + numero2;
+           int nummer1 = Convert.ToInt16(ersteZahl);
+           int nummer2 = Convert.ToInt16(zweiterZahl);
+           
 
-            Console.WriteLine($"Du hast  zu erst  {ersteZahl}  zweitens:  + {zweiterZahl} und das Ergebnis ist {ergebnis}");
+           int resultado = nummer1 - nummer2;
+
+           Console.WriteLine($"Du hast zu erst {ersteZahl} danach {zweiterZahl} und die Subtraktion zwischen beide ist {resultado} ");
 
         }
     }
