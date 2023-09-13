@@ -8,10 +8,21 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-             for(int zaehlvariable=0;zaehlvariable<10;zaehlvariable++){
+           string[] emails = new string[] {
+                    "hans.bode@tecalliance.net",
+                    "abc@tecalliance.net",
+                    "quertz@tecalliance.net"
 
-                Console.WriteLine(zaehlvariable);
-             }
+           };
+           foreach(string email in emails){
+                Console.WriteLine($"Die Email lautet: {email}");
+
+           }
+           for(int position=0;position< emails.Length; position++)
+           {
+                Console.WriteLine($"Die Email lautet: {emails[position]}");
+
+           }
              
 
         }
