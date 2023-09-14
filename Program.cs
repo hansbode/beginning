@@ -8,25 +8,21 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-                 //Aufgabe 1: Initialisiere 2 Zahlen und gebe die Summe auf der Console aus
+                 //Aufgabe 3: Lasse den Nutzer eine Zahl eingeben und gebe alle Zahlen
 
-                int zweiteZahl = 5;
-                int ersteZahl = 6;
+            //           bis einschließlich der eingegeben Zahl aus
 
+              Console.WriteLine("Gebe mir eine Zahl und ich werde bis dieser zahlen");
+                int zahl1 = Convert.ToInt32(Console.ReadLine());
+                
 
-                 int nummer1 = Convert.ToInt16(zweiteZahl);
-                 int nummer2 = Convert.ToInt16(ersteZahl);
+                           for(int zaehlvariable=0;zaehlvariable<=zahl1;zaehlvariable++){
 
-                 int ergebnis = nummer1 +nummer2;
-
-
-                 Console.WriteLine($"Deine erste Zahl ist {ersteZahl} und deine zweite {zweiteZahl} und die Summe zwishcen beide ist {ergebnis}");
-
+                           
+                                            Console.WriteLine(zaehlvariable);
 
            
-           }
-
-           
-        
+                           }
     }
+}
 }
