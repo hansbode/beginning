@@ -9,19 +9,26 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Aufgabe 8: Frage den Nutzer nach einer Texteingabe und fülle diese mit bis zu 20 Stellen mit einem y von links auf
-            // escribir un texto que siempre sea de 20 letras y las letras que faltan le sume una y
+            //Aufgabe 9: Frage den Nutzer nach einer Eingabe mit Semikolons ( ; ) und Splitte die Eingabe an diesem Zeichen. Gebe die einzelnen Werte auf der Console aus.
+            // lo de los emails de ayer darlos cuando se separan por medio de puntocoma y hacerlos una fila para abajo
             Console.WriteLine("Schreibe einen Text");
-            string textito = Console.ReadLine();
-            string texto2 = textito.PadRight(20, 'y');
-            
+                       string[] text = new string[] {
+
+                            
+
+
+                       };
              
-           
+                      foreach(string email in text){
+                            Console.WriteLine($"Die Email lautet: {email}");
+           }
+
+                      for(int position=0;position< text.Length; position++)
+                                          {
+                             Console.WriteLine($"Die Email lautet: {text[position]}");
+                                        }
+
             
-
-
-
-            Console.WriteLine($"Die neue text Variante lautet: {texto2} ");
         }
     }
 }
