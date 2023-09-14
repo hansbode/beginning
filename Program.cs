@@ -10,11 +10,8 @@ namespace HelloWorld
         {
                  //Aufgabe 1: Initialisiere 2 Zahlen und gebe die Summe auf der Console aus
 
-                 Console.WriteLine("Gebe mir eine Zahl");
-                 string ersteZahl = Console.ReadLine();
-
-                 Console.WriteLine("Gebe mir eine andere Zahl");
-                 string zweiteZahl = Console.ReadLine();
+                int zweiteZahl = 5;
+                int ersteZahl = 6;
 
 
                  int nummer1 = Convert.ToInt16(zweiteZahl);
