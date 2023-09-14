@@ -8,21 +8,23 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-                 //Aufgabe 3: Lasse den Nutzer eine Zahl eingeben und gebe alle Zahlen
+                //Aufgabe 4: Lasse den Nutzer eine Zahl eingeben und gebe nur die geraden Zahlen aus.
 
-            //           bis einschließlich der eingegeben Zahl aus
+            //           (Hinweis: Modulo operator. => Geteilt durch 2,
 
-              Console.WriteLine("Gebe mir eine Zahl und ich werde bis dieser zahlen");
-                int zahl1 = Convert.ToInt32(Console.ReadLine());
+            //                  wenn der Rest 0 ist, ist die Zahl gerade)
+
+              Console.WriteLine($"Bitte Zahl 1 eingeben!");
+            int zahl1=Convert.ToInt16(Console.ReadLine());
+
+            for(int i=0;i<=zahl1;i++)
+            {
                 
-
-                           for(int zaehlvariable=0;zaehlvariable<=zahl1;zaehlvariable++){
-
-                           
-                                            Console.WriteLine(zaehlvariable);
-
-           
+                if(i%2==0&&i!=0)
+                {
+                    Console.WriteLine($"{i}");
+                }
                            }
     }
 }
-}
+    }
