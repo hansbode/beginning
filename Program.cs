@@ -8,23 +8,23 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-                //Aufgabe 4: Lasse den Nutzer eine Zahl eingeben und gebe nur die geraden Zahlen aus.
+            //Aufgabe 5: Lasse den Nutzer eine Zahl eingeben und berechne von dieser Zahl die Fakultät.
 
-            //           (Hinweis: Modulo operator. => Geteilt durch 2,
-
-            //                  wenn der Rest 0 ist, ist die Zahl gerade)
-
-              Console.WriteLine($"Bitte Zahl 1 eingeben!");
+              static void Main(string[] args)
+        {   
+            Console.WriteLine($"Bitte Zahl 1 eingeben!");
             int zahl1=Convert.ToInt16(Console.ReadLine());
 
-            for(int i=0;i<=zahl1;i++)
+ 
+
+            int ergebnis=1;            
+
+            for(int i=1;i<=zahl1;i++)
             {
-                
-                if(i%2==0&&i!=0)
-                {
-                    Console.WriteLine($"{i}");
-                }
-                           }
+                ergebnis=ergebnis*i;
+            }
+            Console.WriteLine($"{ergebnis}");
+        } 
     }
 }
     }
