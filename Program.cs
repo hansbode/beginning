@@ -9,25 +9,16 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Aufgabe 9: Frage den Nutzer nach einer Eingabe mit Semikolons ( ; ) und Splitte die Eingabe an diesem Zeichen. Gebe die einzelnen Werte auf der Console aus.
-            // lo de los emails de ayer darlos cuando se separan por medio de puntocoma y hacerlos una fila para abajo
-            Console.WriteLine("Schreibe einen Text");
-                       string[] text = new string[] {
+            //Aufgabe 11: Frage den Nutzer nach einer Zahl und zähle von dieser Rückwärts bis 0
 
-                            
+            Console.WriteLine("Gibt einfach eine Zahl");
+            int numero = Convert.ToInt32(Console.ReadLine());
 
 
-                       };
-             
-                      foreach(string email in text){
-                            Console.WriteLine($"Die Email lautet: {email}");
+                for(int zaehlvariable=numero;zaehlvariable>=0;zaehlvariable--){
+
+                    Console.WriteLine(zaehlvariable);
            }
-
-                      for(int position=0;position< text.Length; position++)
-                                          {
-                             Console.WriteLine($"Die Email lautet: {text[position]}");
-                                        }
-
             
         }
     }
