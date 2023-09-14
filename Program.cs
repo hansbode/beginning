@@ -8,23 +8,17 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Aufgabe 5: Lasse den Nutzer eine Zahl eingeben und berechne von dieser Zahl die Fakultät.
+            //Aufgabe 7: Frage den Nutzer nach einem Text und ersetze im Text alle vorkommenden „U“ und „u“ durch „G“ und „g“
 
-              static void Main(string[] args)
-        {   
-            Console.WriteLine($"Bitte Zahl 1 eingeben!");
-            int zahl1=Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Schreibe einen Text");
+            string textito = Console.ReadLine();
+            string textito1 = textito.Replace("U", "G");
+            string textito2 = textito1.Replace("u", "g");
+            
 
- 
 
-            int ergebnis=1;            
 
-            for(int i=1;i<=zahl1;i++)
-            {
-                ergebnis=ergebnis*i;
-            }
-            Console.WriteLine($"{ergebnis}");
-        } 
+            Console.WriteLine($"Die neue text Variante lautet: {textito2}");
+        }
     }
 }
-    }
