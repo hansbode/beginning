@@ -9,17 +9,35 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //Aufgabe 11: Frage den Nutzer nach einer Zahl und zähle von dieser Rückwärts bis 0
 
-            Console.WriteLine("Gibt einfach eine Zahl");
-            int numero = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Gebe mir  Zahl");
+                string zahl1 =Console.ReadLine();  
+                int numero1 = Convert.ToInt32(zahl1);
+         
 
+                Console.WriteLine("Gebe mir eine andere Zahl");
+                string zahl2 =Console.ReadLine();  
+                int numero2 = Convert.ToInt32(zahl2);
 
-                for(int zaehlvariable=numero;zaehlvariable>=0;zaehlvariable--){
+                Console.WriteLine("Plus oder minus");
+                string signo = Console.ReadLine();
 
-                    Console.WriteLine(zaehlvariable);
-           }
-            
+                if(signo == "+")
+                {
+                    Console.WriteLine(numero1+numero2);
+                }
+                else if(signo == "-")
+                {
+                    Console.WriteLine(numero1-numero2);
+                }
+
+         
+          
+          
+          
         }
-    }
-}
+
+
+     }
+ }                   
+    
