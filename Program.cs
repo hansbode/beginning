@@ -11,34 +11,26 @@ namespace HelloWorld
         {
 
 
-            Console.WriteLine("Wähle deine Zahl");
-             int numeroSuerte = Convert.ToInt32(Console.ReadLine());
-            Random random = new Random();
+            Console.WriteLine("Wie viele Texte willst du in einem Array speichern.");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            string[] myText = new string[numero];
+           
+           // Console.WriteLine($"Gebe mir die {numero} Texte die du willst");
+          //  string textito = Console.ReadLine();
 
-            int randomN = random.Next(0, 101);
-
-
-            while(randomN!=numeroSuerte)
+            for(int position=0; position<numero; position++)
             {
-               
-                if(numeroSuerte>randomN)
-                {
-                    Console.WriteLine($"Deine Nummmer {numeroSuerte} ist größer als die random Nummer");
+                Console.WriteLine("Gebe einen Text ein");
+                string eingegebenertext = Console.ReadLine();
+                myText[position] = eingegebenertext;
+                string eingegebenerText2 = eingegebenertext.PadLeft(20, ' ');
 
-                }
-                else if(numeroSuerte<randomN)
-                {
-                    Console.WriteLine($"Deine Nummer {numeroSuerte} ist kleiner als die random Nummer");
-
-                }
-                numeroSuerte = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Es lautet {eingegebenerText2}");
             }
 
-             if(randomN==numeroSuerte)
-                {
-                        Console.WriteLine($"Du hast gewonnen  mit Nummer {numeroSuerte}");
-                }
-          
+            
+
+                    //string texto2 = textito.PadRight(20, 'y');
         } 
     }
 }
