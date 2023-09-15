@@ -19,7 +19,7 @@ namespace HelloWorld
                 string zahl2 =Console.ReadLine();  
                 int numero2 = Convert.ToInt32(zahl2);
 
-                Console.WriteLine("Plus oder minus");
+                Console.WriteLine("Plus, minus, mal oder durch");
                 string signo = Console.ReadLine();
 
                 if(signo == "+")
@@ -30,6 +30,18 @@ namespace HelloWorld
                 {
                     Console.WriteLine(numero1-numero2);
                 }
+
+                else if(signo == "*")
+                {
+                    Console.WriteLine(numero1*numero2);
+                }
+
+                else if(signo == "/")
+                {
+                    Console.WriteLine(numero1/numero2);
+                }
+
+
 
          
           
