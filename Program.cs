@@ -14,12 +14,12 @@ namespace HelloWorld
            Console.WriteLine("Gebe mir eine Nummer und werde Rückwarts zahlen bis 0");
            int numeroG = Convert.ToInt32(Console.ReadLine());
 
-           for(int zaehlvariable=numeroG;zaehlvariable>=0;zaehlvariable--)
+           for(int zaehlvariable=numeroG;zaehlvariable>=0;zaehlvariable-=2)
            {
             Console.WriteLine(zaehlvariable);
            }
           
-           
+           // 65 = 65,63->0
         } 
     }
 }
