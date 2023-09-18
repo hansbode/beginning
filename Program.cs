@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Threading.Channels;
@@ -10,18 +11,32 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Schreibe einen Text wie du willst");
-            string textito = Console.ReadLine();
-    	    
+            Console.WriteLine("Wie viele Zahlen willst du in dein Array haben?");
+            string eingabe = Console.ReadLine();
+            int groese = Convert.ToInt32(eingabe);
+            int [] myArray = new int[groese];
 
-            string[] splittedtext = textito.Split("h");
+            for( int position = 0; position<groese; position++)
+            {
+                Console.WriteLine("Gebe mir einen Nummer");
+                string eingegebenerNummer = Console.ReadLine();
+                myArray[position] = Convert.ToInt32(eingegebenerNummer);
+                
 
-            int largo = textito.Length;
+            }
+
+            int maxNumber = myArray.Max();
+            int minNumber = myArray.Min();
+            double average = myArray.Average();
+
+
+            
+            
 
 
 
 
-          Console.WriteLine($"Dein Text ist {largo} lang und enthält die Buchstabe h {splittedtext.Length -1} mal");
+          Console.WriteLine($"Du hast {eingabe}  Zahlen gewählt, die kleinste Zahl ist {minNumber} und die größte ist {maxNumber}");
            
         } 
     }
