@@ -11,32 +11,14 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Wie viele Zahlen willst du in dein Array haben?");
-            string eingabe = Console.ReadLine();
-            int groese = Convert.ToInt32(eingabe);
-            int [] myArray = new int[groese];
+           Console.WriteLine("Gebe mir eine Nummer und werde Rückwarts zahlen bis 0");
+           int numeroG = Convert.ToInt32(Console.ReadLine());
 
-            for( int position = 0; position<groese; position++)
-            {
-                Console.WriteLine("Gebe mir einen Nummer");
-                string eingegebenerNummer = Console.ReadLine();
-                myArray[position] = Convert.ToInt32(eingegebenerNummer);
-                
-
-            }
-
-            int maxNumber = myArray.Max();
-            int minNumber = myArray.Min();
-            double average = myArray.Average();
-
-
-            
-            
-
-
-
-
-          Console.WriteLine($"Du hast {eingabe}  Zahlen gewählt, die kleinste Zahl ist {minNumber} und die größte ist {maxNumber}");
+           for(int zaehlvariable=numeroG;zaehlvariable>=0;zaehlvariable--)
+           {
+            Console.WriteLine(zaehlvariable);
+           }
+          
            
         } 
     }
