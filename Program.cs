@@ -10,19 +10,18 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Schreibe einen Text wie du willst");
+            string textito = Console.ReadLine();
+    	    
 
-            Console.WriteLine("Gebe mir eine Zahl");
-            int numero1 = Convert.ToInt32(Console.ReadLine());
+            string[] splittedtext = textito.Split("h");
 
-
-            Console.WriteLine("Gebe mir eine Zahl");
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            
-            
-            int ergebnis = numero1% numero2;
+            int largo = textito.Length;
 
 
-            Console.WriteLine($"Die Division von {numero1} und {numero2} erzeugt den Rest {ergebnis}");
+
+
+          Console.WriteLine($"Dein Text ist {largo} lang und enthält die Buchstabe h {splittedtext.Length -1} mal");
            
         } 
     }
