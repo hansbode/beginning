@@ -11,21 +11,28 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-          //Der Nutzer soll eine Zahl eingeben. Diese stellen die Anzahl der Sekunden dar. 
-            //Konvertiere die Zahl in die Anzahl der Tage, Stunden Minuten und restliche Sekunden.  
-            //(90.061 => 1 Tag 1 Stunde 1 Minute 1 Sekunde)
+          Console.WriteLine("Schreibe ein Text die durch ';' geteilt wird");
+          string texto = Console.ReadLine();
+          texto.Split(";");
+          string[]  myArray = texto.Split(';');
 
-            int amountSeconds = Convert.ToInt32(Console.ReadLine());
+          foreach(string textito in myArray)
+          {
+            Console.WriteLine(texto);
+          }
 
-            int amountDays = amountSeconds / 24 / 60 / 60;
-            Console.WriteLine("Anzahl Tage:" + amountDays);
-            int restSeconds = amountSeconds % ( 24 * 60 * 60);
-            int amountHours = restSeconds / 60 / 60;
-            restSeconds = restSeconds % (60 * 60);
-            int amountMinutes = restSeconds / 60 ;
-            restSeconds = restSeconds % 60;
+          for(int index=0; index < myArray.Length; index++)
+          {
+
+            Console.WriteLine(myArray[index]);
+          }
+
+
+          //Split
+
+           
             
-            Console.WriteLine($@"Aus der Anzahl {amountSeconds} wird {amountDays} Tage, {amountHours} Stunden, {amountMinutes} Minuten, {restSeconds} Sekunden");
+            
 
           
 
