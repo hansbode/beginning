@@ -11,18 +11,25 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-          string mis = "MissiSsiPpi";
+          //Der Nutzer soll eine Zahl eingeben. Diese stellen die Anzahl der Sekunden dar. 
+            //Konvertiere die Zahl in die Anzahl der Tage, Stunden Minuten und restliche Sekunden.  
+            //(90.061 => 1 Tag 1 Stunde 1 Minute 1 Sekunde)
+
+            int amountSeconds = Convert.ToInt32(Console.ReadLine());
+
+            int amountDays = amountSeconds / 24 / 60 / 60;
+            Console.WriteLine("Anzahl Tage:" + amountDays);
+            int restSeconds = amountSeconds % ( 24 * 60 * 60);
+            int amountHours = restSeconds / 60 / 60;
+            restSeconds = restSeconds % (60 * 60);
+            int amountMinutes = restSeconds / 60 ;
+            restSeconds = restSeconds % 60;
+            
+            Console.WriteLine($@"Aus der Anzahl {amountSeconds} wird {amountDays} Tage, {amountHours} Stunden, {amountMinutes} Minuten, {restSeconds} Sekunden");
 
           
-            mis = mis.ToLower();
-           int amountM = mis.Count(m => m == 'M' || m == 'm');
-           int amountI = mis.Count(i => i == 'I' || i == 'i');
-           int amountP = mis.Count(p => p == 'P' || p == 'p');
-           int amountS = mis.Count(s => s == 'S' || s == 's');
-          Console.WriteLine($"In Wort {mis} kommt M: {amountM}, I:{amountI};  P:{amountP}, S:{amountS}");
-          
 
-           // contar cuantas veces viene una letra en la oracion 
+           // sacar cuanto tiempo hay, si son 190s sean 3min con 10s
 
 
 
