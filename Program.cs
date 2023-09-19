@@ -9,74 +9,52 @@ namespace HelloWorld
     class Program
     {
         static void Main(string[] args)
-        {
-        
-          Console.WriteLine("Gebe mir eine Zahl");
-          int Zahl = Convert.ToInt16(Console.ReadLine());
-          string ergebnis = Fahren(Zahl);
-          Console.WriteLine($"Das Auto {ergebnis}");
-
-           
-        } 
-
-         /*
-            // Passe die Methode "Fahren" so an, dass 
-            //- bei einer Geschwindigkeit von 0 die Methode "steht" zurück gibt: Hinweis: return
-            //- bei einer Geschwindigkeit von 1-10 "schleicht" zurück gibt
-            //- bei einer Geschwindigkeit von 11-50 "fährt langsam" zurück gibt
-            //- bei einer Geschwindigkeit von 51-100 "fährt schnell" zurück gibt
-            //- bei einer Geschwindigkeit über 100 "rast" zurück gibt.
-
-            //Bau die Ausgabe so, dass nach jedem Aufruf folgende Texte ausgegeben werden können. 
-            //Das Auto steht.
-            //Das Auto schleicht.
-            //Das Auto fährt langsam.
-            //Das Auto fährt schnell. 
-            //Das Auto rast.
+        {             
+                 /*
+                Erstelle ein Array mit folgenden Zahlen [20,50,11,2,49]
+                Gebe die Werte innerhalb des Arrays nacheinander aus
+                Gebe die Werte innerhalb des Arrays rückwärts aus
+                Gebe die Werte in einer sortierten Reihenfolge aus ([20,50,11,2,49] => [2,11,20,49,50]) (Sort Ascending)
+                Gebe die Werte in einer sortierten Reihenfolge rückwärts aus ([20,50,11,2,49] => [50,49,20,11,2]) (Sort Descending)
             */
 
-        static string Fahren( int geschwindigkeit)
-        {
+            int[] myArray = {20,50,11,2,49};
+
+            Console.WriteLine("Ausgabe nacheinander");
+            for(int i=0; i<myArray.Length; i++)
+            {
+                Console.WriteLine(myArray[i]);
+            }
+            /*
+            Console.WriteLine("Ausgabe nacheinander mit FOREACH");
+            foreach(int x in myArray)
+            {
+                Console.WriteLine(x);
+            }
+            */
+
+            Console.WriteLine("Ausgabe rückwärts");
+            for(int i=myArray.Length-1; i>=0; i--)
+            {
+                Console.WriteLine(myArray[i]);
+            }
+
             
-            
-            
-
-            if(geschwindigkeit==0)
+            Array.Sort(myArray);
+            Console.WriteLine("Ausgabe sortiert nacheinander");
+            for(int i=0;i<myArray.Length;i++)
             {
-                return "steht";
-            }
-            else if(geschwindigkeit>0 && geschwindigkeit<=10)
-            {
-                return "schleicht";
-            }
-            else if(geschwindigkeit>10 && geschwindigkeit<=50)
-            {
-                return "fährt langsam";
-            }
-            else if(geschwindigkeit>50 && geschwindigkeit<=100)
-            {
-                return "fährt schnell";
-            }
-            else if(geschwindigkeit>100)
-            {
-                return "rast";
-            }
-            else
-            {
-                return "Du hast ja kein Auto";
-
+                Console.WriteLine(myArray[i]);
             }
 
-
-            // geschwindigkeit = 0 "Steht"
-            // geschwindigkeit >0<=10 "schleicht"
-            // geschwindigkeit >10<51 "fährt langsam"
-            // geschwindigkeit >50<101"fährt schnell"
-            //geschwindigkeit>100 " rast"
-
+            Console.WriteLine("Ausgabe sortiert rückwärts");
+            for(int i=myArray.Length-1; i>=0; i--)
+            {
+                Console.WriteLine(myArray[i]);
+            }
             
         }
     }
-}
-                    
+
+}                   
     
